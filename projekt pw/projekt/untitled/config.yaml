@@ -1,0 +1,31 @@
+# Parametry symulacji stacji paliw
+fuelTypes:
+  - name: PB95
+    flowRateLpm: 120     # litry na minutę (prędkość wydawania)
+  - name: PB98
+    flowRateLpm: 100
+  - name: ON
+    flowRateLpm: 110
+
+M: 5                # liczba stanowisk dystrybutorów (widoczna zmianaa na GUI)
+pumpsPerSpot: 3      # liczba dystrybutorów na stanowisko (widoczna zmianaa na GUI)
+K: 5                  # liczba kas (widoczna zmianaa na GUI)
+N: 20                 # maksymalna liczba samochodów jednocześnie na stacji
+
+# Ustawienia czasowe (wszystkie w milisekundach)
+simulation:
+  minLitresPerCar: 20        # minimalny zakres tankowania
+  maxLitresPerCar: 75        # maksymalny zakres tankowania
+  arrivalIntervalMin: 1000   # samochody przyjeżdżają co 1-5 s
+  arrivalIntervalMax: 5000
+  walkToCashierTimeMin: 500  # czas dojścia do kasy: 0.5-1 s
+  walkToCashierTimeMax: 1000
+  paymentTimeMin: 1000       # obsługa przy kasie: 1-2 s
+  paymentTimeMax: 2000
+  walkToCarTimeMin: 500      # czas powrotu do auta: 0.5-1 s
+  walkToCarTimeMax: 1000
+
+# Parametry uzupełnienia paliwa
+fuelRefill:
+  threshold: 300              # próg uzupełnienia paliwa (300 litrów)
+  durationMillis: 5000        # czas uzupełnienia (5 sekund)

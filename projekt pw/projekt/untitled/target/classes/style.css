@@ -1,0 +1,149 @@
+/* Style CSS dla aplikacji JavaFX */
+
+/* Ogólne style */
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 12px;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Style przycisków */
+.button {
+    -fx-background-color: #4c8bf5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 4px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 2, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #3a7be0;
+}
+
+.button:pressed {
+    -fx-background-color: #2d62b8;
+}
+
+.button:disabled {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #888888;
+}
+
+/* Przyciski akcji */
+#startButton {
+    -fx-background-color: #4caf50;
+}
+
+#startButton:hover {
+    -fx-background-color: #3d8b40;
+}
+
+#pauseButton {
+    -fx-background-color: #ff9800;
+}
+
+#pauseButton:hover {
+    -fx-background-color: #e68900;
+}
+
+#resumeButton {
+    -fx-background-color: #2196f3;
+}
+
+#resumeButton:hover {
+    -fx-background-color: #0b7dda;
+}
+
+#stopButton {
+    -fx-background-color: #f44336;
+}
+
+#stopButton:hover {
+    -fx-background-color: #e53935;
+}
+
+/* Style etykiet */
+.label {
+    -fx-text-fill: #333333;
+}
+
+/* Style listy statystyk */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+}
+
+.list-cell {
+    -fx-padding: 5px 10px;
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #e3f2fd;
+    -fx-text-fill: #333333;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Style obszaru logów */
+.text-area {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-control-inner-background: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}
+
+/* Style canvas */
+.canvas {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-background-color: white;
+}
+
+/* Dodatkowe style dla pól statusu */
+#statusLabel {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 20px;
+}
+
+.statusRunning {
+    -fx-text-fill: #4caf50;
+}
+
+.statusPaused {
+    -fx-text-fill: #ff9800;
+}
+
+.statusStopped {
+    -fx-text-fill: #f44336;
+}
+
+/* Style dla paneli */
+.panel {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+}
+
+/* Style dla nagłówków paneli */
+.panel-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 0 0 10px 0;
+    -fx-border-color: #eeeeee;
+    -fx-border-width: 0 0 1 0;
+}
